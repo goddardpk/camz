@@ -1,0 +1,11 @@
+<button mat-button (click)="home()">Home</button>
+<button mat-button [matMenuTriggerFor]="cameramenu">Camz</button>
+<mat-menu #cameramenu="matMenu">
+  <button mat-menu-item (click)="setupCameraSession()">
+    Setup Camera Session
+  </button>
+  <button mat-menu-item (click)="setupCameraSession()">Setup Cameras</button>
+  <button mat-menu-item (click)="remoteControl()">Remote Control</button>
+  <button mat-menu-item (click)="review()">Review Footage</button>
+  <button mat-menu-item mat-menu-item (click)="logout()">LogOut</button>
+</mat-menu>

@@ -6,12 +6,14 @@ export class RemoteControl {
 
 export class RemoteControlEvent {
     id: number;
+    remoteControlId: number;
     key: number;
     keyState: number;
 }
 
 export class RemoteControlState {
     id: number;
+    remoteControlId: number;
     stateKey: string;
     stateValue: string;
     sequence: number;

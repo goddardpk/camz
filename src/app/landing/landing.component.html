@@ -1,17 +1,27 @@
-<div class="content" role="main">
-  <div class="card-container">
-    <a class="card" target="_self" rel="noopener" href="camera-config/">
-      <span>Camera Setup</span>
-    </a>
-
-    <a class="card" target="_self" rel="noopener" href="remote-control/">
-      <span>Remote Control</span>
-    </a>
-
-    <a class="card" target="_self" rel="noopener" href="review/">
-      <span>Review Footage</span>
-    </a>
-  </div>
-
-  <input type="hidden" #selection />
-</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Camz...</mat-card-title>
+    <mat-card-subtitle
+      >Your remote control for multiple cameras</mat-card-subtitle
+    >
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://cdn.vox-cdn.com/thumbor/lEOG-4Gd1-5kz06qDBeJ4ZNzVDE=/0x0:2020x1338/2820x1586/filters:focal(849x508:1171x830)/cdn.vox-cdn.com/uploads/chorus_image/image/65473625/twarren_iphone11propixel4_1.0.jpg"
+    alt="Google Image of camera phone"
+  />
+  <mat-card-content>
+    <p>
+      Managing multiple camera phones just got easier. Install the Camz app on
+      the phones you want to manage. Cameras phones running app can opt-in to
+      join a photo session. Once the camera phone joins, you can tell the phone
+      when to record and stop. The footage captured on phone gets pushed to Camz
+      Hub and the session footage can be reviewed later.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Getting Started</button>
+  </mat-card-actions>
+</mat-card>
+<input type="hidden" #selection />

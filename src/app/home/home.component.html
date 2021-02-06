@@ -1,9 +1,24 @@
-<h1>Welcome {{ currentUser.firstName }}!</h1>
-<p>You're logged in!</p>
-<h3>All registered users:</h3>
-<ul>
-  <li *ngFor="let user of users">
-    {{ user.username }} ({{ user.firstName }} {{ user.lastName }}) -
-    <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
-  </li>
-</ul>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Welcome {{ currentUser.firstName }}</mat-card-title>
+    <mat-card-subtitle>User info</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png"
+    alt="Google Image of camera phone"
+  />
+  <mat-card-content>
+    <p>
+      <mat-list-item *ngFor="let user of users">
+        {{ user.username }} ({{ user.firstName }} {{ user.lastName }})
+        <a (click)="deleteUser(user.id)" class="text-danger"></a>
+      </mat-list-item>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Getting Started</button>
+  </mat-card-actions>
+</mat-card>
+<input type="hidden" #selection />

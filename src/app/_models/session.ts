@@ -13,7 +13,8 @@ export class SessionLocation {
 
 export class SessionTimeline {
     id: number;
-    sequence: number;
+    startSequence: number;
+    endSequence: number;
     token: string;  
 }
 export class RecordingSession {
@@ -24,4 +25,10 @@ export class RecordingSession {
 export class ReviewSession {
     id: number;
     sessions: Session[];
+}
+
+export class SessionAdmin {
+    id: number;
+    username: string;
+    sessionId: number;
 }

@@ -1,1 +1,12 @@
-<p>discover works!</p>
+<mat-selection-list #cameras>
+  <mat-list-item *ngFor="let camera of getAvailableCameras()">
+    <a
+      class="card"
+      target="_self"
+      rel="noopener"
+      href="camera-detail/{{ camera.id }}"
+    >
+      <span>{{ camera.desc }}</span>
+    </a>
+  </mat-list-item>
+</mat-selection-list>
